@@ -1,6 +1,6 @@
 ---
-- name: Print the gateway for each host when defined
+- name: Worthless Playbook
   hosts: all
   tasks:
-    - debug:
-      msg: System {{ inventory_hostname }}
+    - name: Print inventory name
+      debug: System {{ inventory_hostname }}
