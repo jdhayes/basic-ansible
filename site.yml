@@ -1,6 +1,5 @@
 ---
 - name: Print the gateway for each host when defined
   hosts: all
-  tasks:
-    - name: Printing
+    - debug:
       msg: System {{ inventory_hostname }}
